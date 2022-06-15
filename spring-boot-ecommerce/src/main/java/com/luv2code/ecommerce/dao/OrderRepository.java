@@ -11,6 +11,6 @@ import com.luv2code.ecommerce.entity.Order;
 @RepositoryRestResource
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
-	Page<Order> findByCustomerEmail(@RequestParam("email") String email, Pageable page);
+	Page<Order> findByCustomerEmailOrderByDateCreatedDesc(@RequestParam("email") String email, Pageable page);
 
 }
