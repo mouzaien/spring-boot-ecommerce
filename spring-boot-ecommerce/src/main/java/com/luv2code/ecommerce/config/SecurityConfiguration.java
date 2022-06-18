@@ -13,6 +13,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 		// add cors filter
 		http.cors();
+		http.csrf().disable();
 	}
 
 }
