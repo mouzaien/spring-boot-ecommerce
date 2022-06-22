@@ -6,5 +6,6 @@ import lombok.Data;
 public class PaymentInfo {
 	int amount;
 	String currency;
+	String receiptEmail;
 
 }
